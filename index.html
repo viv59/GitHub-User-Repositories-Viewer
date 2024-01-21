@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container-temp">
+        <h1 style="text-align: center;">
+            Enter Github username to fetch its Repositories
+        </h1>
+        <form id="myForm" autocomplete="off">
+            <div class="form-group">
+                <input type="text" class="form-control" id="search" placeholder="Search Username" required>
+            </div>
+            <div class="form-group">
+                <button class="btn btn-primary btn-block">
+                    Search User
+                </button>
+                
+        </form>
+    </div>
+<div class="container2">
+
+    <div class="box1">
+        <div class="box1-content">
+            <div class="profile" id="result">            
+                <div>
+                    <img class="rounded-circle shadow-4-strong" alt="avatar2" src="https://avatars.githubusercontent.com/u/141128631?v=4" height="300px" width="300px"/>
+                </div>
+            <p class="card-text"  style="text-align:center; padding-bottom: 30px;"><i class="bi-link"><a href="https://gitub.com/viv59"> https://gitub.com/viv59</a></i></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="box2">
+        <div class="bio">
+            <h2 class="johnname" id="nameid">Vivek Gaikwad</h2>
+            <p id="bioid">Builds, designs, and maintains websites and software applications.</p>
+            
+            <p id="locationid"><i style="font-size:20px" class="fa fa-map-marker"></i>&nbsp;IIT Dharwad</p>
+            <p id="twitter_usernameid"><i style="font-size:20px" class="fa">&#xf099;</i>&nbsp;Twitter handle not available</p>           
+        </div>
+    </div>
+
+</div>
+  <ul id="repositories-list"></ul>
+  <div class="loader" id="loader"></div>
+  <div class="pagination">
+    <button id="prevbutton" onclick="loadPreviousPage()">Older</button>
+    <span id="page-info"></span>
+    <button id="nextbutton" onclick="loadNextPage()">Newer</button>
+  </div>
+
+</body>
+    <script src="script.js"></script>
+</html>

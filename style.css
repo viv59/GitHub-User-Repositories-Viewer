@@ -1,0 +1,218 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  background-color: #cbf1f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.container2 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box1 {
+  flex: 1 1 calc(40% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #b3e0e3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.box2 {
+  flex: 1 1 calc(60% - 20px);
+  margin: 10px;
+  box-sizing: border-box;
+  background-color: #add8e6;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.box1-content,
+.bio {
+  padding: 20px;
+}
+
+.profile img {
+  max-width: 80%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.johnname {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+#result > div > img {
+  margin-left: 15%;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .box1,
+  .box2 {
+    flex: 1 0 1%;
+  }
+}
+
+.card-text {
+  text-align: center;
+  padding-top: 10px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+li {
+  width: 40%;
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 5px;
+  box-sizing: border-box;
+  background-color: #a6e3e9;
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  position: relative;
+}
+
+#repositories-list {
+  position: relative;
+  margin-right: 16px;
+  padding-right: 22px;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.languages {
+  margin-top: 8px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 20px;
+}
+
+.pagination button {
+  margin: 0 25px;
+  background-color: #ffffff;
+  border: 1px solid rgb(209, 213, 219);
+  border-radius: 0.5rem;
+  box-sizing: border-box;
+  color: #111827;
+  line-height: 1.25rem;
+  padding: 0.75rem 1rem;
+  text-align: center;
+}
+
+#myForm > div:nth-child(2) {
+  margin-left: 45%;
+  margin-right: 5%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#myForm > div:nth-child(1) {
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body > div {
+  background-color: #e3fdfd;
+}
+
+#repositories-list > li > div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: space-between;
+}
+
+#repositories-list > li:nth-child(-n + 10) {
+  padding: 4px;
+}
+
+#repositories-list > li:nth-child(-n + 10) > div > button {
+  margin: 4px;
+  appearance: button;
+  background-color: #71c9ce;
+  border: 1px solid #71c9ce;
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 999;
+  transform: translate(-50%, -50%);
+  border: 6px solid #f3f3f3;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 1s linear infinite;
+  margin-top: 20px;
+  display: none;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
